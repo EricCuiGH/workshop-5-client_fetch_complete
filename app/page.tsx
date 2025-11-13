@@ -43,7 +43,7 @@ export default function Home() {
       const weatherData = await weatherResponse.json();
       setTemperature(weatherData.current.temperature_2m);
       console.log(weatherData);
-
+      
     } catch (err) {
       console.error('Error fetching weather:', err);
       setError('Failed to fetch weather data. Please try again.');
